@@ -1,0 +1,29 @@
+{
+  "name": "@haochengf/seats-aero-mcp",
+  "version": "0.1.0",
+  "description": "FastMCP server exposing Seats.aero Partner API tools.",
+  "bin": {
+    "seats-aero-mcp": "bin/seats-aero-mcp.js"
+  },
+  "files": [
+    "bin",
+    "server.py",
+    "requirements.txt",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/seats-aero-mcp.js"
+  },
+  "keywords": [
+    "mcp",
+    "fastmcp",
+    "seats",
+    "seats.aero"
+  ],
+  "author": "Haocheng Fang",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
