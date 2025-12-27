@@ -29,7 +29,7 @@ After publishing this package to npm (see Publishing section below), the server 
 launched the same way Claude invokes the `nitan` MCP:
 
 ```bash
-npx -y @haochengf/seats-aero-mcp
+npx -y @skybluu/seats-aero-mcp
 ```
 
 The CLI bootstraps an isolated Python virtual environment inside the package, installs
@@ -66,7 +66,7 @@ Pydantic models. Markdown responses are truncated at ~25k characters with clear 
      "mcpServers": {
        "seats_aero": {
          "command": "npx",
-         "args": ["-y", "@haochengf/seats-aero-mcp"],
+         "args": ["-y", "@skybluu/seats-aero-mcp"],
          "env": {
            "SEATS_AERO_PARTNER_TOKEN": "pro_xxx"
          }

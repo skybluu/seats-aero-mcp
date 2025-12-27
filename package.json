@@ -1,6 +1,6 @@
 {
   "name": "@skybluu/seats-aero-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FastMCP server exposing Seats.aero Partner API tools.",
   "bin": {
     "seats-aero-mcp": "bin/seats-aero-mcp.js"
@@ -21,7 +21,7 @@
     "seats",
     "seats.aero"
   ],
-  "author": "Haocheng Fang",
+  "author": "SkyBluu",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
