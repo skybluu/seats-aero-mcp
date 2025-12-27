@@ -40,7 +40,7 @@ function findPython() {
 function ensureVenv() {
   if (!fs.existsSync(venvPython)) {
     const python = findPython();
-    console.log(`Creating virtual environment with ${python} ...`);
+    console.error(`Creating virtual environment with ${python} ...`);
     run(python, ["-m", "venv", venvDir], { cwd: projectRoot });
   }
 }
@@ -53,7 +53,7 @@ function ensureDependencies() {
   const requirementsHash = crypto.createHash("sha256").update(fs.readFileSync(requirementsPath)).digest("hex");
   const needsInstall = !fs.existsSync(depsMarker) || fs.readFileSync(depsMarker, "utf8") !== requirementsHash;
   if (needsInstall) {
-    console.log("Installing Python dependencies ...");
+    console.error("Installing Python dependencies ...");
     run(venvPip, ["install", "--upgrade", "pip"], { cwd: projectRoot });
     run(venvPip, ["install", "-r", requirementsPath], { cwd: projectRoot });
     fs.writeFileSync(depsMarker, requirementsHash);
