@@ -1,5 +1,5 @@
 {
-  "name": "@haochengf/seats-aero-mcp",
+  "name": "@skybluu/seats-aero-mcp",
   "version": "0.1.0",
   "description": "FastMCP server exposing Seats.aero Partner API tools.",
   "bin": {
